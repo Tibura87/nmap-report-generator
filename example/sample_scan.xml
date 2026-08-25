@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun scanner="nmap" args="nmap -sV -oX scan.xml 192.168.253.129">
+  <host>
+    <status state="up" reason="arp-response"/>
+    <address addr="192.168.253.129" addrtype="ipv4"/>
+    <hostnames/>
+    <ports>
+      <port protocol="tcp" portid="22">
+        <state state="open" reason="syn-ack"/>
+        <service name="ssh" product="OpenSSH" version="10.2p1 Ubuntu 2ubuntu3.5"/>
+      </port>
+      <port protocol="tcp" portid="80">
+        <state state="open" reason="syn-ack"/>
+        <service name="http" product="Apache httpd" version="2.4.66"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>
